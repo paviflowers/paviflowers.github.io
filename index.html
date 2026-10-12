@@ -61,9 +61,8 @@
   .step h3{font-size:1.4rem;margin-bottom:4px}
   .step p{color:var(--muted);font-size:.95rem}
 
-  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
-  .gallery .ph{aspect-ratio:1/1;border-radius:14px;background:linear-gradient(135deg,#fde68a,#fbcfe8);display:flex;align-items:center;justify-content:center;color:#7c2d12;font-size:.85rem;text-align:center;padding:12px}
-  .gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px}
+  .gallery{columns:3 240px;column-gap:14px}
+  .gallery img{width:100%;height:auto;display:block;margin:0 0 14px;border-radius:14px;break-inside:avoid;background:#f6ece0}
 
   .about{max-width:680px;margin:0 auto;text-align:center;color:var(--muted);font-size:1.05rem}
 
@@ -148,13 +147,15 @@
   <section id="gallery">
     <div class="wrap">
       <h2>Gallery</h2>
-      <p class="sub">A few recent creations.</p>
+      <p class="sub">A selection of wedding garlands, made to order in Auckland.</p>
       <div class="gallery">
-        <!-- Replace each placeholder with: <img src="images/garland1.jpg" alt="Description"> -->
-        <div class="ph">Add a photo of a wedding garland</div>
-        <div class="ph">Add a photo of a pooja garland</div>
-        <div class="ph">Add a photo of a housewarming toran</div>
-        <div class="ph">Add a photo of a gift garland</div>
+        <!-- To add a photo, upload it to the images folder and add: <img src="images/your-photo.jpg" alt="Description" loading="lazy" width="900" height="1350"> -->
+        <img src="images/wedding-garlands-red-rose-white-chrysanthemum.jpg" alt="Pair of handmade wedding garlands with red roses and white chrysanthemum, pearl strings and tassels, made in Auckland by Pavi Flowers" width="900" height="1365">
+        <img src="images/wedding-garlands-chrysanthemum-red-rose-accents.jpg" alt="Pair of wedding garlands with fluffy white chrysanthemum and red rose accents, pearl strings and rosebud tassels, handmade by Pavi Flowers in Auckland" width="900" height="1600" loading="lazy">
+        <img src="images/wedding-garlands-alternating-red-rose-white-chrysanthemum.jpg" alt="Pair of wedding garlands with alternating red roses and white chrysanthemum, white ribbon ties and red rosebud tassels, handmade by Pavi Flowers in Auckland" width="900" height="1510" loading="lazy">
+        <img src="images/wedding-garland-white-rose-babys-breath-pearl.jpg" alt="Wedding garland of white roses and baby&#39;s breath on pearl strings with a rosebud tassel, handmade by Pavi Flowers in Auckland" width="900" height="1125" loading="lazy">
+        <img src="images/wedding-garlands-pink-rose-babys-breath.jpg" alt="Pair of pink and magenta rose wedding garlands with baby&#39;s breath and pearl strings, handmade by Pavi Flowers in Auckland" width="900" height="784" loading="lazy">
+        <img src="images/wedding-garlands-soft-pink-rose-pearl.jpg" alt="Pair of soft pink rose wedding garlands on pearl strings with rosebud tassels, handmade by Pavi Flowers in Auckland" width="900" height="1612" loading="lazy">
       </div>
     </div>
   </section>
